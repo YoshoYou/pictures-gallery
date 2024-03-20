@@ -1,0 +1,121 @@
+body {
+  height: 2000px;
+}
+.up {
+  width: 30px;
+  height: 30px;
+  background-color: greenyellow;
+  position: fixed;
+  right: -100px;
+  bottom: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 20%;
+  text-align: center;
+  transition: .6s;
+  cursor: pointer;
+}
+.line {
+  height: 3px;
+  width: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: greenyellow;
+}
+
+
+/* start coulor */
+.coulor {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+.col {
+  position: relative;
+  margin: 0.5rem;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.col::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+.col:hover::after {
+  background-color: rgb(255 255 255 / 36%);
+
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+
+/* end coulor */
+.landing {
+  
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+
+  height: 300px;
+  width: 400px;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.number {
+  position: relative;
+  margin: 2rem 8rem;
+  display: flex;
+  flex-direction: row;
+}
+.s {
+  position: relative;
+  background-color: green;
+  border-radius: 10%;
+  margin-right: 20px;
+  font-size: 20px;
+  padding: 4px 0;
+  width: 40px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+.s::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.s:hover::before {
+  background-color: rgb(255 255 255 / 36%);
+}
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
